@@ -4,7 +4,7 @@
 
 Declare project dependencies directly in packages.config
 
-''' xml
+``` xml
 <?xml version="1.0" encoding="utf-8"?>
 <packages>
   <package id="xunit" version="2.0.0" targetFramework="net45" />
@@ -13,26 +13,26 @@ Declare project dependencies directly in packages.config
   <package id="xunit.core" version="2.0.0" targetFramework="net45" />
   <package id="xunit.extensibility.core" version="2.0.0" targetFramework="net45" />
 </packages>
-'''
+```
 
 ## Grab the packages
 
 1. Requires command-line nuget:
 
-	'''
+	``` script
 	choco install nuget.commandline
-	'''
+	```
 
 2. Download all references packages
 
-	'''
+	``` script
 	nuget restore <solution_name.sln>
-	'''
+	```
 
 ## Add project references
 
 From the Package Manager Console:
 
-''' 
+``` script
 update-package -reinstall
-'''
+```
